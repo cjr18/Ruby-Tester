@@ -1,0 +1,77 @@
+print "What would you like to do today? 1= character count or 2= daffy duckify your text"
+coice_whattodo=gets.chomp
+if choice_whattodo.include? "1"
+do print "Please type the word/words you would like me to count the characters of!"
+word_length=gets.chomp.length!
+print "Your word/words ended up being #{word_length} characters long! Would you like to start again?"
+start_again_option=gets.chomp.downcase!
+
+if start_again_option.include? "yes"
+do  print "Please type the word/words you would like me to count the characters of!"
+word_length2=gets.chomp.length!
+print "Your word/words ended up being #{word_length} characters long! Would you like to start again, yes or no?"
+start_again_option2=gets.chomp.downcase!
+
+if start_again_option2.include? "yes"
+do print "Please type the word/words you would like me to count the characters of!"
+word_length3=gets.chomp.length!
+print "Your word/words ended up being #{word_length} characters long! Now you must exit the application and get back in to do more... Sorry :("
+
+elsif start_again_option2.include? "no"
+do print "please exit the application and re-run to get back to the selection screen... Sorry :("
+end
+
+else
+do print "That was not one of the commands, please exit the application and get back in to try again!"
+end
+end
+
+elsif choice_whattodo.include? "2"
+do print "Please insert the text you would like us to Daffy Duckify"
+daffyduckify_text=gets.chomp.downcase!
+if daffyduckify_text.include? "s"
+do daffyduckify_text.gsub /s/, "th"
+print "#{daffyduckify_text}
+Good One!"
+end
+
+else
+do print "That is not a valid command!"
+print "What would you like to do today? 1= character count or 2= daffy duckify your text"
+coice_whattodo=gets.chomp
+if choice_whattodo.include? "1"
+do print "Please type the word/words you would like me to count the characters of!"
+word_length=gets.chomp.length!
+print "Your word/words ended up being #{word_length} characters long! Would you like to start again?"
+start_again_option=gets.chomp.downcase!
+
+if start_again_option.include? "yes"
+do  print "Please type the word/words you would like me to count the characters of!"
+word_length2=gets.chomp.length!
+print "Your word/words ended up being #{word_length} characters long! Would you like to start again, yes or no?"
+start_again_option2=gets.chomp.downcase!
+
+if start_again_option2.include? "yes"
+do print "Please type the word/words you would like me to count the characters of!"
+word_length3=gets.chomp.length!
+print "Your word/words ended up being #{word_length} characters long! Now you must exit the application and get back in to do more... Sorry :("
+
+elsif start_again_option2.include? "no"
+do print "please exit the application and re-run to get back to the selection screen... Sorry :("
+end
+
+else
+do print "That was not one of the commands, please exit the application and get back in to try again!"
+end
+end
+
+elsif choice_whattodo.include? "2"
+do print "Please insert the text you would like us to Daffy Duckify"
+daffyduckify_text=gets.chomp.downcase!
+if daffyduckify_text.include? "s"
+do daffyduckify_text.gsub /s/, "th"
+print "#{daffyduckify_text}
+Good One!"
+end
+end
+
