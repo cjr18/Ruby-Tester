@@ -24,11 +24,11 @@ end
 else
 print "That was not one of the commands, please exit the application and get back in to try again!"
 end
-end
 
 elsif choice_whattodo.include? "2"
-do print "Please insert the text you would like us to Daffy Duckify"
+print "Please insert the text you would like us to Daffy Duckify"
 daffyduckify_text=gets.chomp.downcase!
+end
 if daffyduckify_text.include? "s"
 do daffyduckify_text.gsub /s/, "th"
 print "#{daffyduckify_text}
@@ -40,6 +40,8 @@ else
 do print "That is not a valid command!"
 print "What would you like to do today? 1= character count or 2= daffy duckify your text"
 coice_whattodo=gets.chomp
+end
+end
 if choice_whattodo.include? "1"
 print "Please type the word/words you would like me to count the characters of!"
 word_length=gets.chomp.length!
