@@ -18,11 +18,11 @@ word_length3=gets.chomp.length!
 print "Your word/words ended up being #{word_length} characters long! Now you must exit the application and get back in to do more... Sorry :("
 
 elsif start_again_option2.include? "no"
-do print "please exit the application and re-run to get back to the selection screen... Sorry :("
+print "please exit the application and re-run to get back to the selection screen... Sorry :("
 end
 
 else
-do print "That was not one of the commands, please exit the application and get back in to try again!"
+print "That was not one of the commands, please exit the application and get back in to try again!"
 end
 end
 
@@ -33,6 +33,7 @@ if daffyduckify_text.include? "s"
 do daffyduckify_text.gsub /s/, "th"
 print "#{daffyduckify_text}
 Good One!"
+end
 end
 
 else
