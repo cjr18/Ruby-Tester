@@ -30,10 +30,9 @@ print "Please insert the text you would like us to Daffy Duckify"
 daffyduckify_text=gets.chomp.downcase!
 end
 if daffyduckify_text.include? "s"
-do daffyduckify_text.gsub /s/, "th"
+daffyduckify_text.gsub /s/, "th"
 print "#{daffyduckify_text}
 Good One!"
-end
 end
 
 else
